@@ -21,6 +21,7 @@ const config: Config = {
       },
       backgroundImage: {
         'custom-pattern': "url('https://assets.website-files.com/641c0410c17bb111523922e8/64352ebe31b3f575af86e331_pattern.png')",
+        'bg-icon-contactus': "url('/images/bg-icon-contactus.svg')",
       },
     },
   },
