@@ -6,25 +6,22 @@ import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
-  
+
   return (
     <div className="bg-primary">
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 gap-12 py-12">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12 py-8 md:py-12">
           <div className="">
             <Link href="/">
-              <Image
-                src="/images/logo-white.svg"
-                width={190}
-                height={39}
-                alt="logo"
-              />
+              <div className="relative w-[150px] h-[31px] md:w-[190px] md:h-[39px]">
+                <Image src="/images/logo-white.svg" fill alt="logo" />
+              </div>
             </Link>
-            <div className="mt-10 mb-2 text-white">
+            <div className="mt-8 md:mt-10 mb-2 text-white">
               <Link href="mailto:info@vearntech.online">
                 info@vearntech.online
               </Link>
-              <p className="mt-10">
+              <p className="mt-8 md:mt-10">
                 9/2478 S/F, OLD NO- 974 975, S/O SH. <br /> RAJINDER KUMAR JAIN,
                 GALI NO 18, <br /> KAILASH NAGAR, DELHI, East Delhi, <br />{" "}
                 Delhi, 110031
@@ -32,13 +29,15 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-white">
-            <p className="pb-3 text-xl font-bold leading-[22px] ">
-              Pages
-            </p>
+            <p className="pb-3 text-xl font-bold leading-[22px] ">Pages</p>
             <div className="flex flex-col gap-3">
               {HEADER.slice(1).map(({ id, name, url }) => (
                 <Link key={id} href={url}>
-                  <p className={`text-white hover:text-text-02 ${pathname === url && "text-text-02"} font-medium`}>
+                  <p
+                    className={`text-white hover:text-text-02 ${
+                      pathname === url && "text-text-02"
+                    } font-medium`}
+                  >
                     {name}
                   </p>
                 </Link>
@@ -46,9 +45,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-white">
-            <p className="pb-3 text-xl font-bold leading-[22px]">
-              Contact
-            </p>
+            <p className="pb-3 text-xl font-bold leading-[22px]">Contact</p>
             <form className="relative">
               <input
                 placeholder="Enter your email"
@@ -60,7 +57,7 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="flex justify-between items-center py-5">
+        <div className="flex flex-col md:flex-row gap-4 justify-between md:items-center py-4 md:py-5">
           <p className="text-white">
             © 2024. VEARN OUTFITS PRIVATE LIMITED. All rights reserved.
           </p>

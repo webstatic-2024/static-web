@@ -113,3 +113,71 @@ export const TermsAndConditionsContent = {
     `You acknowledge and agree that while Vearn Tech may not currently have set a fixed upper limit on the number of transmissions you may send or receive through the Services, such fixed upper limits may be set by Vearn Tech at any time, solely at Vearn Tech's discretion.`,
   ],
 };
+export const PAYMET_SOLUTIONS = [
+  {
+    title: "Secure Transactions",
+    description:
+      "Experience safe and reliable online payment processing for all your financial needs.",
+  },
+  {
+    title: "Mobile Recharge Services",
+    description:
+      "Instant mobile recharge options for all major Indian telecom operators at your convenience.",
+  },
+  {
+    title: "Bill Payment Solutions",
+    description:
+      "Pay your utility bills online effortlessly and securely with Vearn Tech.",
+  },
+];
+
+export const CUSTOMER_REVIEW = [
+  {
+    name: "Bryan Knight",
+    description:
+      "Vearn Tech made my online payments seamless! Quick mobile recharges and easy bill payments. Highly recommend their services for hassle-free transactions.",
+    icon: "/images/user-1.png",
+  },
+  {
+    name: "Carolyn Ortiz",
+    description:
+      "Using Vearn Tech has transformed the way I manage my bills. Simple, fast, and secure.",
+    icon: "/images/user-2.png",
+  },
+  {
+    name: "Joan Wallace",
+    description:
+      "Vearn Tech is a game-changer! I can recharge my phone and pay bills in just a few clicks. Highly reliable service.",
+    icon: "/images/user-3.png",
+  },
+  {
+    name: "Louis Crawford",
+    description:
+      "Vearn Tech offers the best online payment solution I've ever used. It's quick, hassle-free, and always secure!",
+    icon: "/images/user-4.png",
+  },
+  {
+    name: "Louis Ferguson",
+    description:
+      "Top-notch service from Vearn Tech! I can manage all my bills and recharges in one place. Truly convenient!",
+    icon: "/images/user-5.png",
+  },
+  {
+    name: "Lori Stevens",
+    description:
+      "Fast, reliable, and easy to use. Vearn Tech has made my online payments stress-free. Love their service!",
+    icon: "/images/user-6.png",
+  },
+  {
+    name: "Amanda Reed",
+    description:
+      "Vearn Tech has saved me so much time. I highly recommend their seamless payment system to everyone!",
+    icon: "/images/user-7.png",
+  },
+  {
+    name: "Samuel Bishop",
+    description:
+      "I no longer dread making payments. Everything is so smooth and efficient. Amazing service!",
+    icon: "/images/user-8.png",
+  },
+];
