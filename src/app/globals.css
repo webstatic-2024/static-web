@@ -35,3 +35,15 @@ body {
     }
   }
 }
+
+@media (min-width: 991px) {
+  .backCard {
+    transform: translate(19%, 77px) rotate(-100.53deg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .backCard {
+    transform: translate(17%, -4px) rotate(-102.53deg);
+  }
+}

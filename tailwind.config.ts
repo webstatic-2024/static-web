@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm-lg': '991px',
+        'lg-xl': '1440px',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -26,10 +30,13 @@ const config: Config = {
       translate: {
         '73': '73px',
         '50': '50px',
+        'back-card-sm': '19% 77px',
+        'back-card-xl': '17% -4px',
       },
       rotate: {
         '41.17': '41.17deg',
         '-102.53': '-102.53deg',
+        '-100.53': '-100.53deg',
       },
     },
   },

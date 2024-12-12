@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <div className="py-8 lg:py-40">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
+          <div className="grid md:grid-cols-2 gap-[50px] xl:gap-[70px] lg-xl:gap-[100px]">
             <div>
               <p className="text-4xl md:text-7xl font-bold leading-[1.1em]">
                 Seamless Online <br /> Payments for India
@@ -24,16 +24,60 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="relative w-full h-[248px] md:w-[474px] md:h-[295px] lg:transform lg:translate-y-73 lg:rotate-41.17 z-10">
-                <Image src="/images/front-card.png" fill alt="card" className="object-contain" />
+              <div className="absolute w-[474px] h-[295px] sm-lg:w-[370px] sm-lg:h-[230px] xl:w-[474px] xl:h-[295px] ">
+                <Image
+                  src="/images/front-card.png"
+                  fill
+                  alt="card"
+                  className="object-contain sm-lg:transform sm-lg:translate-y-[180px] sm-lg:rotate-[44.17deg] xl:translate-y-[130px] xl:rotate-41.17 z-10"
+                />
               </div>
-              <div className="hidden lg:block absolute -top-[24%] right-[12%]">
+              {/* <div className="block "> */}
                 <div
-                  className="relative w-[474px] h-[295px] transform z-1"
-                  style={{ translate: "0 50px", rotate: "-102.53deg" }}
+                  className="relative sm-lg:w-[370px] sm-lg:h-[230px] xl:w-[474px] xl:h-[295px] transform z-1 backCard"
                 >
                   <Image src="/images/back-card.png" fill alt="card" />
                 </div>
+              {/* </div> */}
+              <div
+                className="w-[56px] h-[56px] bg-white rounded-[5px] hidden sm-lg:flex justify-center items-center absolute top-[0] left-[0] xl:-top-[69px] xl:left-[1px] rotate-[-26.14deg] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
+                style={{
+                  transform:
+                    "translate3d(0px, 4.9397vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                }}
+              >
+                <Image
+                  src="/images/paypal.svg"
+                  width={31}
+                  height={31}
+                  alt="icon"
+                />
+              </div>
+              <div
+                className="w-[58px] h-[58px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute -top-[150px] left-[22%] xl:top-[-250px] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
+                style={{
+                  transform:
+                    "translate3d(0px, 15.8995vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                }}
+              >
+                <Image
+                  src="/images/mastercard.svg"
+                  width={31}
+                  height={31}
+                  alt="icon"
+                />
+              </div>
+              <div 
+                className="w-[70px] h-[70px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute top-[0] right-[120px] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
+                style={{
+                  transform: "translate3d(0px, 1.3932vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                }}
+              >
+                <Image src="/images/visa.svg" width={39}
+                  height={39} alt="icon" />
+              </div>
+              <div className="w-[75px] h-[75px] bg-white rounded-[5px] hidden xl:flex justify-center items-center absolute bottom-[45px] xl:right-[0] xl:w-[70px] xl:h-[70px] 2xl:right-[-175px] 2xl:w-[75px] 2xl:h-[75px] shadow-[0_2px_40px_7px_rgba(33,33,35,0.2)] transform-gpu will-change-transform preserve-3d rotate-[26.23deg]">
+                <Image src="/images/maestro.svg" width={65} height={64} alt="icon" />
               </div>
             </div>
           </div>
