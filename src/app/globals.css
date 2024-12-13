@@ -47,3 +47,14 @@ body {
     transform: translate(17%, -4px) rotate(-102.53deg);
   }
 }
+
+@media (max-width: 990px) {
+  .backCard {
+    transform: translate(14%, -10%) rotate(0);
+  }
+
+  .boxCard {
+    display: flex;
+    justify-content: center;
+  }
+}
