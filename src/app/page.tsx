@@ -46,11 +46,7 @@ export default function Home() {
                 <Image src="/images/back-card.png" fill alt="card" />
               </div>
               <div
-                className="w-[56px] h-[56px] bg-white rounded-[5px] hidden lg:flex justify-center items-center absolute top-[0] left-[0] xl:-top-[69px] xl:left-[1px] rotate-[-26.14deg] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
-                style={{
-                  transform:
-                    "translate3d(0px, 4.9397vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                }}
+                className="w-[56px] h-[56px] bg-white rounded-[5px] hidden lg:flex justify-center items-center absolute top-[0] left-[0] xl:-top-[69px] xl:left-[1px] rotate-[-26.14deg] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d paypal-card"
               >
                 <Image
                   src="/images/paypal.svg"
@@ -60,11 +56,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className="w-[58px] h-[58px] bg-white rounded-full hidden lg:flex justify-center items-center absolute -top-[35%] left-[22%] xl:-top-[57%] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
-                style={{
-                  transform:
-                    "translate3d(0px, 15.8995vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                }}
+                className="w-[58px] h-[58px] bg-white rounded-full hidden lg:flex justify-center items-center absolute -top-[35%] left-[22%] xl:-top-[57%] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d master-card"
               >
                 <Image
                   src="/images/mastercard.svg"
@@ -74,11 +66,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className="w-[70px] h-[70px] bg-white rounded-full hidden lg:flex justify-center items-center absolute -top-[17%] right-[10%] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
-                style={{
-                  transform:
-                    "translate3d(0px, 1.3932vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                }}
+                className="w-[70px] h-[70px] bg-white rounded-full hidden lg:flex justify-center items-center absolute -top-[17%] right-[10%] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d visa-card"
               >
                 <Image
                   src="/images/visa.svg"

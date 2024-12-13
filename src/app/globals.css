@@ -25,13 +25,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
   .container {
     @apply max-w-[1400px] px-8;
     @apply mx-auto;
   }
+
   @media (max-width: 1024px) {
     .container {
-      @apply max-w-full px-4; /* For mobile screens */
+      @apply max-w-full px-4;
+      /* For mobile screens */
     }
   }
 }
@@ -59,15 +62,51 @@ body {
   }
 }
 
-.fade-in {
-  animation: bounceUpDown 5s infinite ease-in-out;
+.master-card {
+  animation: masterCard 5s infinite ease-in-out;
 }
 
-@keyframes bounceUpDown {
-  0%, 100% {
-    transform: translateY(0);
+@keyframes masterCard {
+
+  0%,
+  100% {
+    transform: translate3d(0px, 15.8995vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
+
   50% {
-    transform: translateY(-20px);
+    transform: translate3d(0px, 13vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+}
+
+.visa-card {
+  animation: visaCard 5s infinite ease-in-out;
+}
+
+@keyframes visaCard {
+
+  0%,
+  100% {
+    transform: translate3d(0px, 2.3932vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  50% {
+    transform: translate3d(0px, 0.3932vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+
+  }
+}
+
+.paypal-card {
+  animation: paypalCard 5s infinite ease-in-out;
+}
+
+@keyframes paypalCard {
+
+  0%,
+  100% {
+    transform: translate3d(0px, 4.9397vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  50% {
+    transform: translate3d(0px, 2.9397vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
 }
