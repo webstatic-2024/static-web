@@ -5,16 +5,26 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="py-8 sm-lg:py-40 pb-[80px]">
+      <div className="py-8 lg:py-40 xl:py-44 lg:pb-[80px]">
         <div className="container">
-          <div className="grid grid-rows-2 sm-lg:grid-rows-1 sm-lg:grid-cols-2 gap-[50px] xl:gap-[70px] lg-xl:gap-[100px]">
+          <div className="grid grid-rows-2 sm-lg:grid-rows-1 sm-lg:grid-cols-2 gap-[50px] md:gap-[70px] lg-xl:gap-[100px]">
             <div>
+              <div className="flex items-center gap-4">
+                <div className="w-1 h-1 rounded-full bg-primary"></div>
+                <p className="text-primary font-bold">
+                  First step of Digitization
+                </p>
+              </div>
               <p className="text-4xl md:text-7xl font-bold leading-[1.1em]">
-                Seamless Online <br /> Payments for India
+                Seamless Online <br /> Payments <br /> for India
               </p>
               <p className="py-6 md:py-8 md:text-lg">
-                Effortless mobile recharge and bill payments at your fingertips
-                with <br /> Vearn Tech.
+                Experience the convenience of seamless mobile recharge and bill
+                payments with Vearn Tech. Whether you're topping up your phone,
+                paying utility bills, or managing other essential services,
+                Vearn Tech puts everything you need right at your fingertips.
+                Our user-friendly platform ensures quick, secure, and
+                hassle-free transactions, saving you time and effort.
               </p>
               <div className="flex flex-col items-center justify-center rounded-full px-8 py-1 md:py-2 bg-primary">
                 <p className="text-white">★★★★★</p>
@@ -23,22 +33,20 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative boxCard col-span-1 justify-self-center sm-lg:justify-self-start">
-              <div className="absolute w-[474px] h-[295px] sm-lg:w-[370px] sm-lg:h-[230px] xl:w-[474px] xl:h-[295px]">
+            <div className="relative w-full boxCard col-span-1 justify-self-center sm-lg:justify-self-start">
+              <div className="absolute w-[370px] h-[230px] xl:w-[474px] xl:h-[295px]">
                 <Image
                   src="/images/front-card.png"
                   fill
                   alt="card"
-                  className="object-contain h-full transform translate-x-[-102px] translate-y-[59px] rotate-0 sm-lg:translate-x-0 sm-lg:translate-y-[180px] sm-lg:rotate-[44.17deg] xl:translate-y-[130px] xl:rotate-41.17 z-10"
+                  className="object-contain h-full transform md:translate-x-[-102px] md:translate-y-[59px] rotate-0 sm-lg:translate-x-0 sm-lg:translate-y-[180px] sm-lg:rotate-[44.17deg] xl:translate-y-[130px] xl:rotate-41.17 z-10"
                 />
               </div>
-              <div
-                className="absolute w-[474px] h-[295px] sm-lg:w-[370px] sm-lg:h-[230px] xl:w-[474px] xl:h-[295px] transform z-1 backCard"
-              >
+              <div className="hidden md:block absolute w-[474px] h-[295px] sm-lg:w-[370px] sm-lg:h-[230px] xl:w-[474px] xl:h-[295px] transform z-1 backCard">
                 <Image src="/images/back-card.png" fill alt="card" />
               </div>
               <div
-                className="w-[56px] h-[56px] bg-white rounded-[5px] hidden sm-lg:flex justify-center items-center absolute top-[0] left-[0] xl:-top-[69px] xl:left-[1px] rotate-[-26.14deg] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
+                className="w-[56px] h-[56px] bg-white rounded-[5px] hidden lg:flex justify-center items-center absolute top-[0] left-[0] xl:-top-[69px] xl:left-[1px] rotate-[-26.14deg] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
                 style={{
                   transform:
                     "translate3d(0px, 4.9397vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -52,7 +60,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className="w-[58px] h-[58px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute -top-[150px] left-[22%] xl:top-[-250px] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
+                className="w-[58px] h-[58px] bg-white rounded-full hidden lg:flex justify-center items-center absolute -top-[35%] left-[22%] xl:-top-[57%] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
                 style={{
                   transform:
                     "translate3d(0px, 15.8995vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -65,17 +73,19 @@ export default function Home() {
                   alt="icon"
                 />
               </div>
-              <div 
-                className="w-[70px] h-[70px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute top-[0] right-[120px] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
+              <div
+                className="w-[70px] h-[70px] bg-white rounded-full hidden lg:flex justify-center items-center absolute -top-[17%] right-[10%] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d"
                 style={{
-                  transform: "translate3d(0px, 1.3932vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                  transform:
+                    "translate3d(0px, 1.3932vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 }}
               >
-                <Image src="/images/visa.svg" width={39}
-                  height={39} alt="icon" />
-              </div>
-              <div className="w-[75px] h-[75px] bg-white rounded-[5px] hidden xl:flex justify-center items-center absolute bottom-[45px] xl:right-[0] xl:w-[70px] xl:h-[70px] 2xl:right-[-175px] 2xl:w-[75px] 2xl:h-[75px] shadow-[0_2px_40px_7px_rgba(33,33,35,0.2)] transform-gpu will-change-transform preserve-3d rotate-[26.23deg]">
-                <Image src="/images/maestro.svg" width={65} height={64} alt="icon" />
+                <Image
+                  src="/images/visa.svg"
+                  width={39}
+                  height={39}
+                  alt="icon"
+                />
               </div>
             </div>
           </div>
