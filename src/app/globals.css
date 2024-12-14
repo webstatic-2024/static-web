@@ -41,6 +41,12 @@ body {
 
 @media (min-width: 991px) {
   .backCard {
+    transform: translate(19%, 128px) rotate(-100.53deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .backCard {
     transform: translate(19%, 77px) rotate(-100.53deg);
   }
 }

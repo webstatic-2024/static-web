@@ -3,17 +3,26 @@ import { HEADER } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const pathname = usePathname();
-  console.log("pathname", pathname);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="relative">
       <div className="py-4">
-        <div className="container  mx-auto">
+        <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <Link href="/">
               <div className="relative w-[150px] h-[31px] md:w-[190px] md:h-[39px]">
@@ -59,7 +68,7 @@ export default function Header() {
             : "top-[76px] max-h-0 opacity-0 -z-10"
         }`}
       >
-        <div className="flex flex-col gap-4 items-end py-6 px-4">
+        <div className="flex lg:hidden flex-col gap-4 items-end py-6 px-4">
           {HEADER.map(({ id, name, url }) => (
             <Link key={id} href={url}>
               <p
