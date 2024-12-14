@@ -12,6 +12,7 @@ const config: Config = {
         'mg': '480px',
         'sm-lg': '991px',
         'lg-xl': '1440px',
+        '1300px': '1300px',
       },
       colors: {
         background: "var(--background)",
