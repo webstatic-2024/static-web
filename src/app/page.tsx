@@ -93,7 +93,7 @@ export default function Home() {
               <div className="relative w-[255px] h-[500px] xl:w-[280px] xl:h-[550px] rounded-2xl overflow-hidden">
                 <Image src="/images/phone.png" fill alt="icon" />
               </div>
-              <div className="absolute -top-[32px] left-[10%] md:left-[20%] 2xl:left-[18%]">
+              <div className="absolute -top-[32px] left-[10%]  md:left-[27%] sm-lg:left-[28%] lg:left-[2%] 2xl:left-[18%]">
                 <div className="hidden md:block relative w-[159px] h-[190px] xl:w-[205px] xl:h-[244px]">
                   <Image
                     src="/images/phone-1.svg"
@@ -103,7 +103,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-[4%] right-[8%] 2xl:right-[15%]">
+              <div className="absolute bottom-[7%] right-[20%] sm-lg:right-[20%] lg:right-[0] 2xl:right-[15%]">
                 <div className="hidden md:block relative w-[255px] h-[207px] xl:w-[280px] xl:h-[228px]">
                   <Image
                     src="/images/phone-2.svg"
