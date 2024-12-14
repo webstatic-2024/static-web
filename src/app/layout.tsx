@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Vearn Tech offers reliable online payment solutions for Indian customers, including mobile recharges and bill payments. Experience hassle-free transactions with our user-friendly platform and secure payment methods.",
     images: [
       {
-        url: "/public/seo.png",
+        url: "/images/seo.png",
         alt: "Vearn Tech - Seamless Online Payment Solutions",
       },
     ],
