@@ -56,7 +56,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className="w-[58px] h-[58px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute -top-[35%] left-[22%] xl:-top-[57%] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d master-card"
+                className="w-[58px] h-[58px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute -top-[28%] left-[22%] lg:-top-[35%] xl:-top-[57%] xl:left-[24%] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d master-card"
               >
                 <Image
                   src="/images/mastercard.svg"
@@ -66,7 +66,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className="w-[70px] h-[70px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute -top-[17%] right-[10%] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d visa-card"
+                className="w-[70px] h-[70px] bg-white rounded-full hidden sm-lg:flex justify-center items-center absolute top:-top-[12%] right-[5%] lg:-top-[17%] lg:right-[10%] xl:-top-[15%] xl:right-[50px] shadow-[0_0_40px_5px_rgba(132,132,132,0.2)] transform-gpu will-change-transform preserve-3d visa-card"
               >
                 <Image
                   src="/images/visa.svg"
