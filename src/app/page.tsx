@@ -20,7 +20,7 @@ export default function Home() {
               </p>
               <p className="py-6 md:py-8 md:text-lg">
                 Experience the convenience of seamless mobile recharge and bill
-                payments with Vearn Tech. Whether you're topping up your phone,
+                payments with Vearn Tech. Whether you&apos;re topping up your phone,
                 paying utility bills, or managing other essential services,
                 Vearn Tech puts everything you need right at your fingertips.
                 Our user-friendly platform ensures quick, secure, and
