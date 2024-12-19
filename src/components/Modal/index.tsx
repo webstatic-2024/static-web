@@ -2,14 +2,12 @@ import React from "react";
 
 interface ModalProps {
   isOpen: boolean;
-  onClose: () => void;
   message: string;
   type: "success" | "error";
 }
 
 export default function Modal({
   isOpen,
-  onClose,
   message,
   type = "success",
 }: ModalProps) {

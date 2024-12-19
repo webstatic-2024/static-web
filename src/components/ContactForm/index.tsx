@@ -193,7 +193,6 @@ export default function ContactForm() {
       
       <Modal 
         isOpen={isModalOpen}
-        onClose={() => setModalIsOpen(false)}
         message={modalMessage}
         type={modalType}
       />

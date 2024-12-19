@@ -23,7 +23,7 @@ export default function Footer() {
       const response = await axios.post("/api/send-mail", { email });
       setModalMessage(response.data.message);
       setModalType("success");
-    } catch (error) {
+    } catch {
       setModalMessage("Failed to send email. Please try again.");
       setModalType("error");
     } finally {
@@ -92,7 +92,6 @@ export default function Footer() {
             </form>
             <Modal
               isOpen={isModalOpen}
-              onClose={() => setModalIsOpen(false)}
               message={modalMessage}
               type={modalType}
             />
