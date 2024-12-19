@@ -1,11 +1,38 @@
 "use client";
-import { HEADER, SOCIAL } from "@/constants";
-import Image from "next/image";
+import axios from "axios";
 import Link from "next/link";
+import Modal from "../Modal";
+import Image from "next/image";
+import { useState } from "react";
+import { HEADER, SOCIAL } from "@/constants";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [isModalOpen, setModalIsOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [modalType, setModalType] = useState<"success" | "error">("success");
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLoading(true);
+
+    try {
+      const response = await axios.post("/api/send-mail", { email });
+      setModalMessage(response.data.message);
+      setModalType("success");
+    } catch (error) {
+      setModalMessage("Failed to send email. Please try again.");
+      setModalType("error");
+    } finally {
+      setLoading(false);
+      setModalIsOpen(true);
+      setEmail("");
+      setTimeout(() => setModalIsOpen(false), 2000);
+    }
+  };
 
   return (
     <div className="bg-primary">
@@ -46,15 +73,29 @@ export default function Footer() {
           </div>
           <div className="text-white">
             <p className="pb-3 text-xl font-bold leading-[22px]">Contact</p>
-            <form className="relative">
+            <form className="relative" onSubmit={handleSubmit}>
               <input
                 placeholder="Enter your email"
                 name="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="h-[62px] w-full rounded-[30px] border outline-none border-primary py-[10px] pl-5 pr-36 text-black"
               />
-              <button className="absolute right-2 top-2 w-28 h-12 bg-primary text-white rounded-full">Submit</button>
+              <button
+                type="submit"
+                className="absolute right-2 top-2 w-28 h-12 bg-primary text-white rounded-full"
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "Submit"}
+              </button>
             </form>
+            <Modal
+              isOpen={isModalOpen}
+              onClose={() => setModalIsOpen(false)}
+              message={modalMessage}
+              type={modalType}
+            />
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-between md:items-center py-4 md:py-5">
@@ -63,7 +104,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-5">
             {SOCIAL.map(({ icon, width, height, url }) => (
-              <Link href={url} target="_blank" key={icon}>
+              <Link href={url as string} target="_blank" key={icon}>
                 <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full">
                   <Image src={icon} width={width} height={height} alt="icon" />
                 </div>

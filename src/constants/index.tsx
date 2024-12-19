@@ -1,31 +1,31 @@
 export const SOCIAL = [
   {
     icon: "/images/facebook-icon.svg",
-    url: "https://www.facebook.com/",
+    url: process.env.NEXT_PUBLIC_FACEBOOK_URL,
     width: 22,
     height: 22,
   },
   {
     icon: "/images/twitter-icon.svg",
-    url: "https://twitter.com/",
+    url: process.env.NEXT_PUBLIC_TWITTER_URL,
     width: 20,
     height: 21,
   },
   {
     icon: "/images/youtube-icon.svg",
-    url: "https://www.youtube.com/",
+    url: process.env.NEXT_PUBLIC_YOUTUBE_URL,
     width: 20,
     height: 21,
   },
   {
     icon: "/images/linkedin-icon.svg",
-    url: "https://www.linkedin.com/",
+    url: process.env.NEXT_PUBLIC_LINKEDIN_URL,
     width: 18,
     height: 19,
   },
   {
     icon: "/images/instagram-icon.svg",
-    url: "https://www.instagram.com/",
+    url: process.env.NEXT_PUBLIC_INSTAGRAM_URL,
     width: 18,
     height: 18,
   },
