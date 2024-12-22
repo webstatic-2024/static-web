@@ -30,13 +30,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`antialiased bg-white text-base font-normal font-roboto`}
+        suppressHydrationWarning
       >
-        <Header />
-        {children}
-        <Footer />
+          <Header />
+          {children}
+          <Footer />
       </body>
     </html>
   );

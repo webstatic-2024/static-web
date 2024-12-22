@@ -12,7 +12,7 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <div className="w-1 h-1 rounded-full bg-primary"></div>
                 <p className="text-primary font-bold">
-                  First step of Digitization
+                  First Step of Digitization
                 </p>
               </div>
               <p className="text-4xl md:text-7xl font-bold leading-[1.1em]">
