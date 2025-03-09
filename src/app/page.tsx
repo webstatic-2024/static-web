@@ -1,10 +1,19 @@
+"use client";
+
 import FlexiblePayment from "@/components/HomePage/flexiblePayment";
 import HeaderBanner from "@/components/HomePage/headerBanner";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import Review from "@/components/HomePage/review";
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <div>
       <div className="py-8 lg:py-40 xl:pt-44 lg:pb-[80px]">
@@ -49,16 +58,16 @@ export default function Home() {
                 and more. Enjoy convenience and security with every transaction.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 md:justify-center items-center gap-8 md:gap-12">
+            <div className="grid md:grid-cols-2 md:justify-center items-center gap-8 md:gap-12" ref={ref}>
               <div className="p-8 md:p-12 h-fit bg-white rounded-[30px] shadow">
                 <p className="text-3xl md:text-5xl font-bold text-primary text-center">
-                  150+
+                  {inView ? <CountUp end={150} duration={2} /> : '0'}+
                 </p>
                 <p className="mt-2 text-center font-medium">Secure Payments</p>
               </div>
               <div className="p-8 md:p-12 h-fit bg-white rounded-[30px] shadow">
                 <p className="text-3xl md:text-5xl font-bold text-primary text-center">
-                  15
+                  {inView ? <CountUp end={15} duration={2} /> : '0'}
                 </p>
                 <p className="mt-2 text-center font-medium">
                   Trusted by Millions
