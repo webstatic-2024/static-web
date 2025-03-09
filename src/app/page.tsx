@@ -44,10 +44,9 @@ export default function Home() {
                 Empowering Your Online Payments
               </p>
               <p className="py-2 md:py-3 text-white">
-                Vearn Tech simplifies online payments for Indian customers,
-                offering seamless solutions for mobile recharges, bill payments,
-                and more. Experience convenience and security with every
-                transaction.
+                Sangjeomecom streamlines online payments for Indian customers,
+                providing effortless solutions for mobile recharges, bill payments,
+                and more. Enjoy convenience and security with every transaction.
               </p>
             </div>
             <div className="grid md:grid-cols-2 md:justify-center items-center gap-8 md:gap-12">

@@ -45,8 +45,8 @@ export default function Footer() {
               </div>
             </Link>
             <div className="mt-8 md:mt-10 mb-2 text-white">
-              <Link href="mailto:info@vearntech.online">
-                info@vearntech.online
+              <Link href="mailto:info@sangjeomecom.online">
+                info@sangjeomecom.online
               </Link>
               <p className="mt-8 md:mt-10">
                 9/2478 S/F, OLD NO- 974 975, S/O SH. <br /> RAJINDER KUMAR JAIN,
@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-between md:items-center py-4 md:py-5">
           <p className="text-white">
-            © 2024. VEARN OUTFITS PRIVATE LIMITED. All rights reserved.
+            © 2025. SANGJEOMECOM. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             {SOCIAL.map(({ icon, width, height, url }) => (

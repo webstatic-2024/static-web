@@ -4,18 +4,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Vearn Tech: Seamless Online Payment Solutions in India | Vearn Tech",
+  title: "Sangjeomecom: Effortless Online Payment Solutions in India | Sangjeomecom",
   description:
-    "Vearn Tech offers reliable online payment solutions for Indian customers, including mobile recharges and bill payments. Experience hassle-free transactions with our user-friendly platform and secure payment methods. Join us today for a seamless payment experience.",
+    "Sangjeomecom provides dependable online payment services for Indian users, including mobile recharges and bill payments. Enjoy smooth transactions with our intuitive platform and secure payment options. Join us for a hassle-free payment experience.",
   openGraph: {
     title:
-      "Vearn Tech: Seamless Online Payment Solutions in India | Vearn Tech",
+      "Sangjeomecom: Effortless Online Payment Solutions in India | Sangjeomecom",
     description:
-      "Vearn Tech offers reliable online payment solutions for Indian customers, including mobile recharges and bill payments. Experience hassle-free transactions with our user-friendly platform and secure payment methods.",
+      "Sangjeomecom provides dependable online payment services for Indian users, including mobile recharges and bill payments. Enjoy smooth transactions with our intuitive platform and secure payment options.",
     images: [
       {
         url: "https://staticweb.online/images/seo.png",
-        alt: "Vearn Tech - Seamless Online Payment Solutions",
+        alt: "Sangjeomecom - Effortless Online Payment Solutions",
       },
     ],
     type: "website",

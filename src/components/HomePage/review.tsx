@@ -35,8 +35,7 @@ export default function Review() {
           Flexible Payment Solutions
         </p>
         <p className="py-2 md:py-3">
-          Vearn Tech offers seamless online payment services for mobile
-          recharges and bill payments.
+          Sangjeomecom provides efficient and seamless online payment services for mobile recharges and bill payments.
         </p>
         <div className="pt-12 lg:pt-16">
           <div className="">
